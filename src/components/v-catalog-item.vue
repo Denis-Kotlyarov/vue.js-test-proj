@@ -8,7 +8,7 @@
     <h3 class="item__name">{{ product_data.name }}</h3>
     <p class="item__price">{{ product_data.price }}$</p>
     <p class="item__about">{{ product_data.about }}</p>
-    <button class="item__btn" @click="sendDataToParent">Add to cart</button>
+    <button class="item__btn" @click="addToCart">Add to cart</button>
   </div>
 </template>
 
@@ -29,8 +29,8 @@ export default {
   },
   computed: {},
   methods: {
-    sendDataToParent() {
-      this.$emit('sendDataToParent', this.product_data.article)
+    addToCart() {
+      this.$emit('addToCart', this.product_data)
     }
   },
   watch: {}
@@ -64,5 +64,6 @@ export default {
 }
 .item__about {
   max-width: 220px;
+  font-size: 12px;
 }
 </style>
