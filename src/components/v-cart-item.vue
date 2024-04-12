@@ -54,6 +54,7 @@ export default {
   box-shadow: 0 0 8px 0 grey;
   padding: 20px;
   margin: 20px;
+  gap: 20px;
 }
 .v-cart-item__image {
   width: 170px;

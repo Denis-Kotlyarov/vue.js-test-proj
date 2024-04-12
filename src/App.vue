@@ -7,8 +7,6 @@ import vMainWrapper from './components/v-main-wrapper.vue'
   <vMainWrapper />
 </template>
 
-<style scoped>
-* {
-  text-align: center;
-}
+<style>
+@import './node_modules/materialize-css/dist/css/materialize.min.css';
 </style>

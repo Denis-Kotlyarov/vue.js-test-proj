@@ -2,7 +2,7 @@
   <div class="v-catalog-item">
     <img
       class="v-catalog-item__image"
-      src="https://i.pinimg.com/originals/ef/8b/51/ef8b51455131b34cf2dcdde3ac9c5078.jpg"
+      :src="'/src/assets/images/' + product_data.image"
       :alt="product_data.name"
     />
     <h3 class="item__name">{{ product_data.name }}</h3>
@@ -48,6 +48,7 @@ export default {
   padding: 15px;
   color: black;
   border-radius: 20px;
+  text-align: center;
 }
 .item__price {
   font-size: 12px;
@@ -65,5 +66,8 @@ export default {
 .item__about {
   max-width: 220px;
   font-size: 12px;
+}
+.item__name {
+  font-size: 18px;
 }
 </style>
